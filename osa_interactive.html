@@ -1,21 +1,4 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
-    <title>osapiens - Eye</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            background: #000;
-            margin: 0;
-            padding: 0;
-        }
-    
+<style>
     #osapiens_eye {
         height: auto;
         overflow-x: hidden;
@@ -207,8 +190,6 @@
           }
         }
     </style>
-</head>
-<body>
     
     
    <section id="osapiens_eye">
@@ -1766,6 +1747,3 @@
     document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector(".eye-container svg"),t=e.querySelectorAll(".menu-item"),n=document.querySelector("#label-content-container"),o=()=>{e.removeAttribute("data-label"),n.innerHTML="",n.style.opacity=0};t.forEach(t=>{const a=t.getAttribute("data-label");""!=a&&t.addEventListener("mouseenter",()=>(t=>{e.setAttribute("data-label",t),n.style="","The multi-tenant HUB technology platform osapiens HUB offers 8 independant osapiens solutions (os) and uses powerful enginges, such as iPaaS, IoT, KI, to integrate, process and analyze big data to enable you with an automated & simplified supply chain management."==t&&(n.style="top: 20%; left: 50%;"),"Many companies need to develop a sustainability strategy and report on those topics to comply with the   European Corporate Sustainability Reporting Directive (CSRD). Our solution supports you with it - from materiality assessment to target setting to ESG disclosure."==t&&(n.style="top: 40%; left: 50%;"),n.innerHTML=t,n.style.opacity=1})(a)),t.addEventListener("mouseleave",o)}),e.addEventListener("mouseleave",o),e.addEventListener("mousemove",t=>{const o=e.getBoundingClientRect(),a=t.clientX,s=t.clientY,i=o.left+o.width/2,l=o.top+o.height/2;n.setAttribute("class",a>i?"right":"left"),s>l+50&&n.setAttribute("class","bottom")})});
          */
 </script>
-
-</body>
-</html>
