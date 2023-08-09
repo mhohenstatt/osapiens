@@ -1,0 +1,190 @@
+#osapiens_eye {
+        height: auto;
+        overflow-x: hidden;
+        display: block;
+        max-width: 100%;
+        position: relative;
+        padding: 8vh 0;
+    }
+        #osapiens_eye #eye {
+            width: 100%;
+            height: 100%;
+            display: table;
+            text-align: center;
+            background-image: url("https://blm.one/osapiens.svg");
+            background-repeat: no-repeat;
+            background-color: #000;
+            background-position: center center;
+            max-width: 900px;
+            min-height: 700px;
+            margin: 50px auto;
+            height: 100%;
+            background-size: 111% auto;
+            background-size: 105% auto;
+            overflow-x: hidden;
+            position: relative;
+            padding-top: 3%;
+        }
+        #osapiens_eye .info {
+            position: absolute;
+            right: 5%;
+            top: 2%;
+            color: #fff;
+            border-bottom: 1px solid #4BC676;
+            padding-bottom: 10px;
+            width: 243px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px;
+            text-align: left;
+            line-height: 1.4;
+            font-weight: 300;
+            letter-spacing: -0.05px;
+            opacity: 0.9;
+            transition: 0.5s ease-in-out;
+        }
+        #osapiens_eye .info img {
+            width: 33px;
+            object-fit: contain;
+            float: left;
+        }
+        #osapiens_eye .info p {
+            float: right;
+            max-width: 190px;
+            margin: 0;
+            padding: 0;
+        }
+        #osapiens_eye #eye #eyein {
+            display: flex;
+            width: 100vw;
+            min-height: 100vh;
+            min-height: 510px;
+            justify-content: center;
+            align-items: center;
+            max-width: 1100px;
+            overflow: hidden;
+        }
+
+        #osapiens_eye #eye .eye-container {
+            width: 100%;
+            max-width: 90%;
+            position: relative;
+        }
+
+        #osapiens_eye #eye .eye-container svg {
+            width: 100%;
+            max-height: 650px;
+            height: auto;
+        }
+
+        #osapiens_eye #eye .eye-container svg .menu-item {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+
+        #osapiens_eye #eye .eye-container svg .menu-item:not([id*="Grouping"]):hover {
+            opacity: 1.0;
+        }
+
+        #osapiens_eye #eye .eye-container svg .menu-item:not([id*="Grouping"]):hover > path {
+            fill: #4BC676;
+        }
+
+        #osapiens_eye #eye #label-content-container {
+            opacity: 0;
+            position: fixed;
+            padding: 1.5rem .5rem 1.5rem 1.5rem;
+            top: 50%;
+            left: 5%;
+            transform: translateY(-50%);
+            color: #fffdfd;
+            pointer-events: none;
+            background: #151515;
+            border: 1px solid #4BC676;
+            box-shadow: 0 0 20px rgba(75, 198, 118, 0.55);
+            font-size: 14px;
+            max-width: 250px;
+            font-family: 'Roboto', sans-serif;
+            line-height: 24px;
+            
+            font-weight: 300;
+           
+        }
+        
+        #osapiens_eye #eye #label-content-container.right {
+            left: auto;
+            right: 5%;
+          
+        }
+
+        #osapiens_eye #eye #label-content-container.bottom {
+            top: auto;
+            bottom: 5%;
+           
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        main:hover ~ div.info {
+            opacity: 0.5 !important;
+        }
+      
+            
+        
+        @media screen and (max-width: 662px) {
+            #osapiens_eye #eye #eyein {
+                min-height: 600px;
+            }
+            
+            #osapiens_eye #eye {
+                background-size: 138% auto;
+                min-height: 570px;
+                /* margin: 120px auto;
+                transform: scale(1.185);*/
+                padding: 0%;
+                transform: scale(1.2);
+                margin: auto;
+                /* max-height: 700px; */
+            }
+            #osapiens_eye #eye #label-content-container.bottom {
+                bottom: -18vh;
+                bottom: 3vh;
+            }
+          
+          #osapiens_eye #eye #label-content-container {
+                    padding: 1rem .5rem 1rem 1rem;
+                    top: 50%;
+                    left: 5%;
+                    box-shadow: 0 0 20px rgba(75, 198, 118, 0.55);
+                    font-size: 10px;
+                    max-width: 88vw;
+                    position: absolute;
+                    position: fixed;
+                    line-height: 15px;
+                }
+          #osapiens_eye .info {
+              width: 184px;
+              font-size: 8.5px;
+              line-height: 1.275;
+            }
+          #osapiens_eye #eye .eye-container {
+              width: 115%;
+              max-width: none;
+              position: absolute;
+              /* padding: 20vh 0; */
+              top: 0%;
+              bottom: 0;
+              margin: auto;
+        }
+          #osapiens_eye #eye .eye-container svg {
+              width: 100%;
+              max-height: none;
+              height: 100%;
+          }
+          #osapiens_eye .info p {
+              max-width: 150px;
+              margin-top: 4px;
+          }
+          #osapiens_eye .info img {
+              width: 27px;
+          }
+        }
