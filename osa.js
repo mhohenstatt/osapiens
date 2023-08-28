@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 label = "upcoming"
             }
             
-            labelContainer.innerHTML = "<img src='https://blm.one/osa/" +  label + ".jpeg'>";
+            labelContainer.innerHTML = "<img src='https://uploads-ssl.webflow.com/649ab92d7c6425f3fae9d205/" +  label + ".jpeg'>";
             labelContainer.style.opacity = 1;
            
         };
