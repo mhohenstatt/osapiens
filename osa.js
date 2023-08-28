@@ -5,16 +5,20 @@ document.addEventListener('DOMContentLoaded', () => {
         let width = window.innerWidth;
         
         const handleMouseEnter = (label) => {
-           
+            //let headline = document.querySelectorAll("[data-label='" + label + "']")[0].getAttribute("data-headline")
             circleEye.setAttribute('data-label', label);
             labelContainer.style = ""
-            if(label == "The multi-tenant HUB technology platform osapiens HUB offers 8 independant osapiens solutions (os) and uses powerful enginges, such as iPaaS, IoT, KI, to integrate, process and analyze big data to enable you with an automated & simplified supply chain management.") {
-                labelContainer.style = "top: 20%; left: 50%;bottom:auto;"
+            if(label == "osapiens-hub") {
+                labelContainer.style = "top:20%;left:50%;bottom:auto;"
             }
-            if(label == "Many companies need to develop a sustainability strategy and report on those topics to comply with the   European Corporate Sustainability Reporting Directive (CSRD). Our solution supports you with it - from materiality assessment to target setting to ESG disclosure.") {
-                labelContainer.style = "top: 40%; left: 50%;bottom:auto;"
-           }
-            labelContainer.innerHTML = label;
+            if(label == "csrd") {
+                labelContainer.style = "top:40%;left:50%;bottom:auto;"
+            }
+            if(label == "..."){
+                label = "upcoming"
+            }
+            
+            labelContainer.innerHTML = "<img src='https://blm.one/osa/" +  label + ".jpeg'>";
             labelContainer.style.opacity = 1;
            
         };
@@ -35,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const mousePosition = {x: event.clientX, y: event.clientY};
             const centerX = eyeContainerPosition.left + eyeContainerPosition.width / 2;
             const centerY = eyeContainerPosition.top + eyeContainerPosition.height / 2;
-            console.log(width)
             if(width > 645){
             labelContainer.setAttribute('class', mousePosition.x > centerX ? 'right' : 'left');
             if (mousePosition.y > centerY + 50) {
@@ -50,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         menuItems.forEach((menuItem) => {
             const label = menuItem.getAttribute('data-label');
             const URL = menuItem.getAttribute('data-link');
-            if(label != "") {
+            if(label != "") {
                 
             menuItem.addEventListener('mouseenter', () => handleMouseEnter(label));
             }
