@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('load', () => {
         const circleEye = document.querySelector('.eye-container svg');
         const menuItems = circleEye.querySelectorAll('.menu-item');
         const labelContainer = document.querySelector('#label-content-container');
