@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 label = "upcoming"
             }
             
-            labelContainer.innerHTML = "<img src='https://uploads-ssl.webflow.com/649ab92d7c6425f3fae9d205/" +  label + ".jpeg'>";
+            labelContainer.innerHTML = "<img src='http://www.cluster030.hosting.ovh.net/osa2/" +  label + ".jpeg'>";
             labelContainer.style.opacity = 1;
            
         };
