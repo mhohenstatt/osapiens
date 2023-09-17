@@ -153,6 +153,13 @@
             
         
         @media screen and (max-width: 662px) {
+
+        .imagekit {
+                display: none !important;
+                opacity: 0 !important;
+                visibility: hidden;
+        }
+                
             #osapiens_eye #eye #eyein {
                 min-height: 600px;
             }
