@@ -18,7 +18,7 @@ document.addEventListener('load', () => {
                 label = "upcoming"
             }
             
-            labelContainer.innerHTML = "<img src='https://ik.imagekit.io/osapiens/osa%202/" +  label + ".jpeg'>";
+            labelContainer.innerHTML = "<img src='https://ik.imagekit.io/osapiens/osa%202/" +  label + ".jpeg' class='imagekit'>";
             labelContainer.style.opacity = 1;
            
         };
