@@ -55,13 +55,17 @@
         }
         #osapiens_eye #eye #eyein {
             display: flex;
-            /* width: 100vw; */
             min-height: 100vh;
             min-height: 510px;
             justify-content: center;
             align-items: center;
             max-width: 1100px;
             overflow: hidden;
+        }
+        @media screen and (min-width: 663px) {
+                #osapiens_eye #eye #eyein {
+                    width: 100vw;
+                }
         }
 
         #osapiens_eye #eye .eye-container {
