@@ -55,7 +55,7 @@
         }
         #osapiens_eye #eye #eyein {
             display: flex;
-            width: 100%;
+            /* width: 100vw; */
             min-height: 100vh;
             min-height: 510px;
             justify-content: center;
