@@ -1,6 +1,6 @@
 #osapiens_eye {
         height: auto;
-        overflow-x: hidden;
+        overflow: hidden;
         display: block;
         max-width: 100%;
         position: relative;
@@ -21,7 +21,7 @@
             height: 100%;
             background-size: 111% auto;
             background-size: 105% auto;
-            overflow-x: hidden;
+            overflow: hidden;
             position: relative;
             padding-top: 3%;
         }
